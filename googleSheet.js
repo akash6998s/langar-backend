@@ -1,5 +1,6 @@
 const { google } = require('googleapis');
-const credentials = require('./credentials.json');
+
+const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
 
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
 
@@ -10,6 +11,6 @@ const auth = new google.auth.GoogleAuth({
 
 const sheets = google.sheets({ version: 'v4', auth });
 
-const SPREADSHEET_ID = '19R0vtuhYe8j1CfmqTqT7K4NBlNLnayUjKoZI2ucaWfI'; // 🔥 Replace this with your actual spreadsheet ID
+const SPREADSHEET_ID = '19R0vtuhYe8j1CfmqTqT7K4NBlNLnayUjKoZI2ucaWfI';
 
 module.exports = { sheets, SPREADSHEET_ID };
