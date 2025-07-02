@@ -1,0 +1,31 @@
+{
+  "RollNumber": "8",
+  "member": {
+    "Name": "Akash",
+    "LastName": "Singh",
+    "PhoneNumber": "9315729158",
+    "Email": "",
+    "Address": "Ghaziabad",
+    "Photo": "8.png",
+    "isAdmin": "FALSE",
+    "isSuperAdmin": "FALSE",
+    "loginId": "",
+    "password": ""
+  },
+  "donations": {
+    "2025": {
+      "March": "50",
+      "April": "50",
+      "May": "250",
+      "June": "100"
+    }
+  },
+  "attendance": {
+    "2025": {
+      "March": "13, 22, 23, 29",
+      "April": "5, 6, 12, 13, 19, 27",
+      "May": "3, 4, 10, 17, 18, 22, 24, 25, 27, 31",
+      "June": "7,8,14"
+    }
+  }
+}
