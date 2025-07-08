@@ -26,5 +26,11 @@ app.use("/api/user", userRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 
+// 👉 Add this small ping route to keep the server alive
+app.get('/ping', (req, res) => {
+  res.send('Server is alive 🚀');
+});
+
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
